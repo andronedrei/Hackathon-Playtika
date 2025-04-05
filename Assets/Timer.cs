@@ -7,7 +7,7 @@ using TMPro;
 public class CountdownTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI countdownText;
-    [SerializeField] private float countdownTime = 15f; // Countdown time in seconds
+    // private float countdownTime = 10f; // Countdown time in seconds
 
     private float currentTime;
 
@@ -19,8 +19,12 @@ public class CountdownTimer : MonoBehaviour
             return;
         }
 
-        currentTime = countdownTime;
-        UpdateCountdownText();
+        // currentTime = countdownTime;
+        // UpdateCountdownText();
+    }
+
+    public void SetTimer(float time) {
+        currentTime = time;
     }
 
     void Update()
@@ -35,6 +39,7 @@ public class CountdownTimer : MonoBehaviour
             currentTime = 0;
             UpdateCountdownText();
             // Optionally, trigger an event when the countdown reaches zero
+            TimeManager.Instance.TtriggerNextAction();
         }
     }
 

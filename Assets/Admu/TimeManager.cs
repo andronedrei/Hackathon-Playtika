@@ -2,19 +2,24 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Rendering;
 
 // Clasa de tip Singleton pt gestionarea timpului si freez-ului
 public class TimeManager : MonoBehaviour
 {
-    private static int nr_freeze_pools = 3;
+    [SerializeField] protected int nr_freeze_pools; // trb sa fie 2 sau 3
+    [SerializeField] protected float freeze_time = 1f;
+    [SerializeField] protected float wait_freeze_time = 5f;
+    [SerializeField] protected CountdownTimer countdown_timer; // child class of time manager
+    private bool freezed = false;
     private static TimeManager _instance;
 
     // Design Pattern de tip "Observer" cu liste intre care se va face freeze alternativ
     private List<IFreezable> poolThiefs_1 = new();
-    private List<IFreezable> poolThiefs_2 = new();
     private List<IFreezable> poolCops = new();
+    private List<IFreezable> poolThiefs_2 = new();
 
     private int frozen_idx = 0;
 
@@ -46,16 +51,26 @@ public class TimeManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        // asigura-te ca e un nr corespunzator
+        if (nr_freeze_pools < 2 || nr_freeze_pools > 3) {
+            nr_freeze_pools = 2;
+        }
+
+        countdown_timer.SetTimer(wait_freeze_time);
+    }
+
     // returneaza "pool-ul" curent de entitati pe baza indexului
     private List<IFreezable> GetCurrentPool()
     {
-        switch (frozen_idx)
+        return frozen_idx switch
         {
-            case 0: return poolThiefs_1;
-            case 1: return poolThiefs_2;
-            case 2: return poolCops;
-            default: return null;
-        }
+            0 => poolThiefs_1,
+            1 => poolCops,
+            2 => poolThiefs_2,
+            _ => null,
+        };
     }
 
     // functie alternare entitate inghetata
@@ -121,6 +136,18 @@ public class TimeManager : MonoBehaviour
         }
 
         ChangeFreezeEntity(); // mergi la urmatoarea categorie
+    }
+
+    public void TtriggerNextAction() {
+        if (!freezed) {
+            Freeze();
+            countdown_timer.SetTimer(freeze_time);
+        }
+        if (freezed) {
+            Unfreeze();
+            countdown_timer.SetTimer(wait_freeze_time);
+        }
+        freezed = !freezed;
     }
 
     public void MyDebug()
