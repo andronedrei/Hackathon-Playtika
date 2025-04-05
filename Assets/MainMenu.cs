@@ -8,6 +8,6 @@ public class MainMenu : MonoBehaviour
   public void PlayGame()
     {
         // Load the game scene
-        SceneManager.LoadSceneAsync("Level2Copie");
+        SceneManager.LoadSceneAsync("horo(lvls)");
     }
 }
