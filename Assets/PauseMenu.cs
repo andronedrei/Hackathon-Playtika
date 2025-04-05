@@ -24,6 +24,13 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+
+        if (pauseMenuUI == null)
+        {
+            Debug.LogError("PauseMenuUI is not assigned!");
+            return;
+        }
+
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
@@ -31,6 +38,13 @@ public class PauseMenu : MonoBehaviour
 
     void Pause()
     {
+
+        if (pauseMenuUI == null)
+        {
+            Debug.LogError("PauseMenuUI is not assigned!");
+            return;
+        }
+
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
