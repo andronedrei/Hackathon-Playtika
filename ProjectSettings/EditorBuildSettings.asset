@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/horoScene/Level2bun.unity
     guid: 750d0eeb32bff3c49b22bb87b2f7d1a6
+  - enabled: 1
+    path: Assets/Scenes/horo(Credits).unity
+    guid: d4c91e46dd337444aa9a50baa22883ba
+  - enabled: 1
+    path: Assets/Scenes/horo(fail).unity
+    guid: 955d0af278e4167448d2bee552cb7010
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
