@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         // DEBUG - poti comenta
-        TimeManager.Instance.MyDebug();
+        //TimeManager.Instance.MyDebug();
 
         // FREEZE sau UNFREEZE din "space"
         if (Input.GetKeyDown(KeyCode.Space))
