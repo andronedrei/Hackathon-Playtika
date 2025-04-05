@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 154768811}
   - component: {fileID: 154768810}
   - component: {fileID: 154768809}
+  - component: {fileID: 154768812}
   m_Layer: 5
   m_Name: pauseMenuUI
   m_TagString: Untagged
@@ -195,6 +196,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &154768812
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154768808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c70618487cbf3d46878348bd7aebbc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &184831660
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &324627854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13845,6 +13868,7 @@ GameObject:
   - component: {fileID: 838879927}
   - component: {fileID: 838879926}
   - component: {fileID: 838879925}
+  - component: {fileID: 838879928}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13935,6 +13959,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &838879928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838879923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc24fae0a557ea646bb3724470ab7f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 154768808}
 --- !u!1 &893249654
 GameObject:
   m_ObjectHideFlags: 0
@@ -14065,7 +14102,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840354349}
+      - m_Target: {fileID: 838879928}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -14711,7 +14748,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840354349}
+      - m_Target: {fileID: 838879928}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMainMenu
         m_Mode: 1
@@ -18096,7 +18133,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1840354349}
+      - m_Target: {fileID: 838879928}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -18159,7 +18196,6 @@ GameObject:
   - component: {fileID: 1840354344}
   - component: {fileID: 1840354347}
   - component: {fileID: 1840354348}
-  - component: {fileID: 1840354349}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -18297,19 +18333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c6c3f2a0edca234ab9b28292bc2aad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1840354349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840354343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc24fae0a557ea646bb3724470ab7f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
 --- !u!1 &2145042604
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,9 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenuUI;
+    [SerializeField] private GameObject pauseMenuUI;
 
     private bool isPaused = false;
+
+    void Start()
+    {
+        if (pauseMenuUI == null)
+        {
+            Debug.LogError("PauseMenuUI is not assigned!");
+            return;
+        }
+
+        pauseMenuUI.SetActive(false);
+    }
 
     void Update()
     {
