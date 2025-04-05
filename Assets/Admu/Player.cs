@@ -80,7 +80,8 @@ public class Player : MovableEntity
         }
     }
 
-    void Update()
+    // folosim fixed update pentru consistenta cu atributele de fizica 
+    void FixedUpdate()
     {
         HandleMovement();
     }
