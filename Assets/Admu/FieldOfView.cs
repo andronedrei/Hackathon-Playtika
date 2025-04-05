@@ -60,14 +60,14 @@ public class FieldOfView : MonoBehaviour
             if (check_hit.collider == null) {
                 // nu am lovit nimic, randam pana la "view distance"
                 vertices[i + 1] = dir * view_distance;
-                //Debug.Log("RANDARE COMPLETA");
+                Debug.Log("RANDARE COMPLETA");
             } else {
                 // am lovit un obiect, oprim randarea
                 vertices[i + 1] = check_hit.point - (Vector2)transform.position;
 
                 // daca obiectul a fost un player, semnalam asta
                 CheckPlayerHit(check_hit);
-                //Debug.Log("WE FOUND STH !!!");
+                Debug.Log("WE FOUND STH !!!");
             }
             
         }

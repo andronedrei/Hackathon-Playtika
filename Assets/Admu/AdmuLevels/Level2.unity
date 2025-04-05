@@ -23278,6 +23278,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 6327172112391382309, guid: 0895d7bd2dae10a4ab989215c112acd2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cdacf0e580dc54d4ea47d5fa9b7931fe, type: 2}
     - target: {fileID: 7974466624209943598, guid: 0895d7bd2dae10a4ab989215c112acd2, type: 3}
       propertyPath: fov_material
       value: 
