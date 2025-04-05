@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class FieldOfView : MonoBehaviour
 {
-    [SerializeField] protected Material fov_material;
+    //[SerializeField] protected Material fov_material;
     private Mesh fov_mesh;
 
     protected uint view_distance = 5;
@@ -19,7 +19,10 @@ public class FieldOfView : MonoBehaviour
     {
         fov_mesh = new();
         GetComponent<MeshFilter>().mesh = fov_mesh;
-        GetComponent<MeshRenderer>().material = fov_material;
+        //GetComponent<MeshRenderer>().material = fov_material;
+
+        GetComponent<MeshRenderer>().sortingLayerName = "Default"; // Create if needed
+        GetComponent<MeshRenderer>().sortingOrder = 20;
     }
 
     private bool CheckPlayerHit(RaycastHit2D check_hit) {
@@ -33,7 +36,7 @@ public class FieldOfView : MonoBehaviour
         return true;
     }
 
-    void Update()
+    void LateUpdate()
     {
         ray_count = Mathf.Max(1, ray_count);
         float angle_step = fov / ray_count;
@@ -57,12 +60,14 @@ public class FieldOfView : MonoBehaviour
             if (check_hit.collider == null) {
                 // nu am lovit nimic, randam pana la "view distance"
                 vertices[i + 1] = dir * view_distance;
+                Debug.Log("RANDARE COMPLETA");
             } else {
                 // am lovit un obiect, oprim randarea
                 vertices[i + 1] = check_hit.point - (Vector2)transform.position;
 
                 // daca obiectul a fost un player, semnalam asta
                 CheckPlayerHit(check_hit);
+                Debug.Log("WE FOUND STH !!!");
             }
             
         }
