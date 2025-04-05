@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class FieldOfView : MonoBehaviour
         if (hitObject.TryGetComponent<Player>(out var hitComponent))
         {
             Debug.Log("We found a player! " + hitComponent.GetType().Name);
+            SceneManager.LoadSceneAsync("horo(fail)");
         }
         return true;
     }

@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private bool freezed = false;
     //private bool freezed = false;
 
     // ruleaza inainte de primul frame
@@ -45,14 +44,6 @@ public class GameManager : MonoBehaviour
         //TimeManager.Instance.MyDebug();
 
         // FREEZE sau UNFREEZE din "space"
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (freezed) {
-                TimeManager.Instance.Unfreeze();
-            } 
-            if (!freezed) {
-                TimeManager.Instance.Freeze();
-            }
         // if (Input.GetKeyDown(KeyCode.Space))
         // {
         //     if (freezed) {
@@ -62,8 +53,6 @@ public class GameManager : MonoBehaviour
         //         TimeManager.Instance.Freeze();
         //     }
 
-            freezed = !freezed;
-        }
         //     freezed = !freezed;
         // }
     }
