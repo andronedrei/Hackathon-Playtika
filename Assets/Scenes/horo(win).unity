@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Retry Level
+  m_text: 'Next Level
 
 '
   m_isRightToLeft: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameManager.Instance.CurrentLevel
+          m_StringArgument: horo(Lvls)
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &555265768

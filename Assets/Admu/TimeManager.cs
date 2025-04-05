@@ -58,6 +58,8 @@ public class TimeManager : MonoBehaviour
             nr_freeze_pools = 2;
         }
 
+        freezed = false;
+        frozen_idx = 0;
         countdown_timer.SetTimer(wait_freeze_time);
     }
 
