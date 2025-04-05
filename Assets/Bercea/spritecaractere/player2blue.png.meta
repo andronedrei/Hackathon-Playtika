@@ -934,7 +934,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player2blue_0: 2799151971632357570
+      player2blue_1: 1372688667406212490
+      player2blue_10: 2796970636829563164
+      player2blue_11: -91560280927268676
+      player2blue_12: -8233492445374113083
+      player2blue_13: -4634186270239343295
+      player2blue_14: -8642040008296771718
+      player2blue_15: 5346820068759948380
+      player2blue_16: 97202419436702565
+      player2blue_17: -2531820617622643840
+      player2blue_18: 6440612898414468959
+      player2blue_19: 2774606769728596797
+      player2blue_2: -6676295943971556028
+      player2blue_20: -3935701180295011641
+      player2blue_21: 1000886588689697412
+      player2blue_22: 5649847620793595508
+      player2blue_23: -8013910394069040541
+      player2blue_24: 1690600903449544636
+      player2blue_25: -31983132848705168
+      player2blue_26: 4289515189543224975
+      player2blue_27: -160804647674035152
+      player2blue_28: 6084445208294131311
+      player2blue_29: -6272531281946490706
+      player2blue_3: 632558253024776844
+      player2blue_30: -6664006422835339472
+      player2blue_31: -2778158187643644972
+      player2blue_32: -3948498791338836246
+      player2blue_4: -299378176033808716
+      player2blue_5: -1164100449182403624
+      player2blue_6: -5164059403009560092
+      player2blue_7: -3443816189718643668
+      player2blue_8: -7475137287925057728
+      player2blue_9: 5625554367025203071
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
