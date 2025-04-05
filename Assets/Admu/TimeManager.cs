@@ -12,9 +12,9 @@ public class TimeManager : MonoBehaviour
     private static TimeManager _instance;
 
     // Design Pattern de tip "Observer" cu liste intre care se va face freeze alternativ
-    private List<Freezable> poolThiefs_1 = new();
-    private List<Freezable> poolThiefs_2 = new();
-    private List<Freezable> poolCops = new();
+    private List<IFreezable> poolThiefs_1 = new();
+    private List<IFreezable> poolThiefs_2 = new();
+    private List<IFreezable> poolCops = new();
 
     private int frozen_idx = 0;
 
@@ -47,7 +47,7 @@ public class TimeManager : MonoBehaviour
     }
 
     // returneaza "pool-ul" curent de entitati pe baza indexului
-    private List<Freezable> GetCurrentPool()
+    private List<IFreezable> GetCurrentPool()
     {
         switch (frozen_idx)
         {
@@ -80,14 +80,14 @@ public class TimeManager : MonoBehaviour
     }
 
     // functii de adaugare in pool-uri (practic "suncribe" la serviciul de freeze)
-    public void SubscribeThief_1(Freezable element) => poolThiefs_1.Add(element);
-    public void SubscribeThief_2(Freezable element) => poolThiefs_2.Add(element);
-    public void SubscribeCop(Freezable element) => poolCops.Add(element);
+    public void SubscribeThief_1(IFreezable element) => poolThiefs_1.Add(element);
+    public void SubscribeThief_2(IFreezable element) => poolThiefs_2.Add(element);
+    public void SubscribeCop(IFreezable element) => poolCops.Add(element);
 
     // functii de eliminare din pool-uri (practic "unsubcribe" la serviciul de freeze)
-    public void UnsubscribeThief_1(Freezable element) => poolThiefs_1.Remove(element);
-    public void UnsubscribeThief_2(Freezable element) => poolThiefs_2.Remove(element);
-    public void UnsubscribeCop(Freezable element) => poolCops.Remove(element);
+    public void UnsubscribeThief_1(IFreezable element) => poolThiefs_1.Remove(element);
+    public void UnsubscribeThief_2(IFreezable element) => poolThiefs_2.Remove(element);
+    public void UnsubscribeCop(IFreezable element) => poolCops.Remove(element);
 
     // da freeze la pool-ul focusat in prezent
     public void Freeze()

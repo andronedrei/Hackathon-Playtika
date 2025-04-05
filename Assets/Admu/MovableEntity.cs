@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class MovableEntity : MonoBehaviour, Freezable
+public abstract class MovableEntity : MonoBehaviour, IFreezable
 {
     [SerializeField] protected float base_speed;
     [SerializeField] protected Rigidbody2D rb;
@@ -13,12 +13,12 @@ public abstract class MovableEntity : MonoBehaviour, Freezable
         transform.Translate(speed * Time.deltaTime * movement_dir);
     }
 
-    void Freezable.OnFreeze()
+    void IFreezable.OnFreeze()
     {
         speed = 0;
     }
 
-    void Freezable.OnUnfreeze()
+    void IFreezable.OnUnfreeze()
     {
         speed = base_speed;
     }
