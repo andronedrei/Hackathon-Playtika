@@ -1,0 +1,1392 @@
+fileFormatVersion: 2
+guid: 8632df2dc6fb57d42a405f6f7d626062
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8202553519682190152
+    second: playerbluebun_0
+  - first:
+      213: 1455697864689530121
+    second: playerbluebun_1
+  - first:
+      213: 4115959935896674776
+    second: playerbluebun_2
+  - first:
+      213: -4780063999367371457
+    second: playerbluebun_3
+  - first:
+      213: -8337266196127692178
+    second: playerbluebun_4
+  - first:
+      213: 3556921646678252760
+    second: playerbluebun_5
+  - first:
+      213: 6183218479635104402
+    second: playerbluebun_6
+  - first:
+      213: 3418154988995538051
+    second: playerbluebun_7
+  - first:
+      213: -5493474198424627510
+    second: playerbluebun_8
+  - first:
+      213: -8458507382963695423
+    second: playerbluebun_9
+  - first:
+      213: -3941398160768765452
+    second: playerbluebun_10
+  - first:
+      213: 6052735012874303178
+    second: playerbluebun_11
+  - first:
+      213: -1924186057193407480
+    second: playerbluebun_12
+  - first:
+      213: -2051251792024856339
+    second: playerbluebun_13
+  - first:
+      213: 8652183623344871217
+    second: playerbluebun_14
+  - first:
+      213: 8280188377099126220
+    second: playerbluebun_15
+  - first:
+      213: -5079189944765961041
+    second: playerbluebun_16
+  - first:
+      213: -5137338386443291818
+    second: playerbluebun_17
+  - first:
+      213: 6738423806129016275
+    second: playerbluebun_18
+  - first:
+      213: -2027460637103555676
+    second: playerbluebun_19
+  - first:
+      213: -5616377118594742065
+    second: playerbluebun_20
+  - first:
+      213: 3176350952968504484
+    second: playerbluebun_21
+  - first:
+      213: 7422274833688336410
+    second: playerbluebun_22
+  - first:
+      213: 6867247364945740312
+    second: playerbluebun_23
+  - first:
+      213: -3041276673930266477
+    second: playerbluebun_24
+  - first:
+      213: -8088961383593057180
+    second: playerbluebun_25
+  - first:
+      213: -3170110416240913642
+    second: playerbluebun_26
+  - first:
+      213: -8490331716069263205
+    second: playerbluebun_27
+  - first:
+      213: -5217386297573800093
+    second: playerbluebun_28
+  - first:
+      213: 4139844168873859814
+    second: playerbluebun_29
+  - first:
+      213: -8220510787301888073
+    second: playerbluebun_30
+  - first:
+      213: -67864053390041230
+    second: playerbluebun_31
+  - first:
+      213: -3420067307020476434
+    second: playerbluebun_32
+  - first:
+      213: 4812490725918209927
+    second: playerbluebun_33
+  - first:
+      213: -3467713057171217146
+    second: playerbluebun_34
+  - first:
+      213: -6453849329290085625
+    second: playerbluebun_35
+  - first:
+      213: -2786288229708404264
+    second: playerbluebun_36
+  - first:
+      213: -6959604912045183863
+    second: playerbluebun_37
+  - first:
+      213: -8345541842176766734
+    second: playerbluebun_38
+  - first:
+      213: 7469390730124064707
+    second: playerbluebun_39
+  - first:
+      213: -1992596675209617623
+    second: playerbluebun_40
+  - first:
+      213: -2155741133210059157
+    second: playerbluebun_41
+  - first:
+      213: 8673695662618978077
+    second: playerbluebun_42
+  - first:
+      213: -7509990664868661743
+    second: playerbluebun_43
+  - first:
+      213: -2802100601501068672
+    second: playerbluebun_44
+  - first:
+      213: -5871189698875406967
+    second: playerbluebun_45
+  - first:
+      213: -8649875154116384792
+    second: playerbluebun_46
+  - first:
+      213: 2937229576915861487
+    second: playerbluebun_47
+  - first:
+      213: 4057565897811520881
+    second: playerbluebun_48
+  - first:
+      213: 8458478238872319316
+    second: playerbluebun_49
+  - first:
+      213: -6986996540243088757
+    second: playerbluebun_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerbluebun_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 671
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b48638680daa2e80800000000000000
+      internalID: -8202553519682190152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 671
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9053d1dce7da33410800000000000000
+      internalID: 1455697864689530121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 671
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d16cd021c3de1930800000000000000
+      internalID: 4115959935896674776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 671
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3523125e1dc9adb0800000000000000
+      internalID: -4780063999367371457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6acfed31941c4c80800000000000000
+      internalID: -8337266196127692178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc972c6469bc5130800000000000000
+      internalID: 3556921646678252760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292084772743fc550800000000000000
+      internalID: 6183218479635104402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cee423ad9bf6f20800000000000000
+      internalID: 3418154988995538051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_8
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6502c725243c3b0800000000000000
+      internalID: -5493474198424627510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c01e6ca9585d9a80800000000000000
+      internalID: -8458507382963695423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_10
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1fff451475d49c0800000000000000
+      internalID: -3941398160768765452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 575
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac631f9ec62aff350800000000000000
+      internalID: 6052735012874303178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 479
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c3a3bc9faeb45e0800000000000000
+      internalID: -1924186057193407480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 488
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de89977fc5d7883e0800000000000000
+      internalID: -2051251792024856339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 494
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1375ce80a2bb21870800000000000000
+      internalID: 8652183623344871217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 488
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5cf4a657329e270800000000000000
+      internalID: 8280188377099126220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_16
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 479
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac2d7be7a71389b0800000000000000
+      internalID: -5079189944765961041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_17
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 488
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653b111d4f184b8b0800000000000000
+      internalID: -5137338386443291818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_18
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 491
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd0b5effb0b38d50800000000000000
+      internalID: 6738423806129016275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_19
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 488
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abfa51ea430dd3e0800000000000000
+      internalID: -2027460637103555676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 383
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8478974ce9e02b0800000000000000
+      internalID: -5616377118594742065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_21
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 383
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a449a9dc5aa41c20800000000000000
+      internalID: 3176350952968504484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_22
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 383
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a189057e2a7310760800000000000000
+      internalID: 7422274833688336410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_23
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 383
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812045c181d5d4f50800000000000000
+      internalID: 6867247364945740312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_24
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 383
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39874ba7af63bc5d0800000000000000
+      internalID: -3041276673930266477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 383
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46465119a7c3ebf80800000000000000
+      internalID: -8088961383593057180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_26
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 287
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613d1355f518104d0800000000000000
+      internalID: -3170110416240913642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_27
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 287
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b987576b9484c2a80800000000000000
+      internalID: -8490331716069263205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_28
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 287
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3678f152ece1897b0800000000000000
+      internalID: -5217386297573800093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_29
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 287
+        width: 71
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ead237765ea37930800000000000000
+      internalID: 4139844168873859814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_30
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 293
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfaa9a3ef0eaed80800000000000000
+      internalID: -8220510787301888073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_31
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 296
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f1ba4c006ee0ff0800000000000000
+      internalID: -67864053390041230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_32
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 293
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef1e1197ea7980d0800000000000000
+      internalID: -3420067307020476434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_33
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 287
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787773b41d669c240800000000000000
+      internalID: 4812490725918209927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_34
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 287
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6056354e85530efc0800000000000000
+      internalID: -3467713057171217146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_35
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 287
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b75cd9a325f66a0800000000000000
+      internalID: -6453849329290085625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 191
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9e0621e9d1559d0800000000000000
+      internalID: -2786288229708404264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_37
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 191
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cab70c4348a6f90800000000000000
+      internalID: -6959604912045183863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_38
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 197
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc05ee39edae2c80800000000000000
+      internalID: -8345541842176766734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 197
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7f3a56b4b98a760800000000000000
+      internalID: 7469390730124064707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_40
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 197
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f918191efd854e0800000000000000
+      internalID: -1992596675209617623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_41
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 191
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ef0576cd44512e0800000000000000
+      internalID: -2155741133210059157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 95
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17204cff382f5870800000000000000
+      internalID: 8673695662618978077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_43
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 95
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116f00aa74727c790800000000000000
+      internalID: -7509990664868661743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_44
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 95
+        width: 68
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082de9e5950fc19d0800000000000000
+      internalID: -2802100601501068672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_45
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 95
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98549956318558ea0800000000000000
+      internalID: -5871189698875406967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_46
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e76a67506875f780800000000000000
+      internalID: -8649875154116384792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_47
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef37d3fcb223c820800000000000000
+      internalID: 2937229576915861487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_48
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d6bc7afae5f4830800000000000000
+      internalID: 4057565897811520881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_49
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 68
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4553b50b42d826570800000000000000
+      internalID: 8458478238872319316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerbluebun_50
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 77
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a6de35aa3390f90800000000000000
+      internalID: -6986996540243088757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
