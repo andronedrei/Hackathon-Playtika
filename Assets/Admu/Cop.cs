@@ -13,8 +13,9 @@ public class Cop : MovableEntity
             movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         }
 
-        // Apply the movement to the Rigidbody2D
-        rb.linearVelocity = movement * speed;
+        // Apply the movement
+        //rb.linearVelocity = movement * speed * Time.deltaTime;
+        transform.Translate(movement * speed * Time.deltaTime);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

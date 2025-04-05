@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     private bool freezed = false;
 
     // ruleaza inainte de primul frame
-    private void Start()
+    private void Awake()
     {
         if (_instance == null)
         {
@@ -39,12 +39,14 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        TimeManager.Instance.MyDebug();
         // freeze sau unfreeze cand apesi "space"
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (freezed) {
                 TimeManager.Instance.Unfreeze();
-            } else {
+            } 
+            if (!freezed) {
                 TimeManager.Instance.Freeze();
             }
 
