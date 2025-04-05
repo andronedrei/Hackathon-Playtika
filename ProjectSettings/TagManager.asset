@@ -4,13 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Player2
-  - Player1
+  - COP
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Entity
   - Water
   - UI
   - 
