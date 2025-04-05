@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
+// clasa tip singleton gestionare aspecte "high-level"
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
@@ -33,14 +34,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // make gravity 0
+        // facem gravitatea 0 deoarece e un joc top-down
         Physics2D.gravity = Vector2.zero;
     }
 
     private void Update()
     {
+        // DEBUG - poti comenta
         TimeManager.Instance.MyDebug();
-        // freeze sau unfreeze cand apesi "space"
+
+        // FREEZE sau UNFREEZE din "space"
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (freezed) {

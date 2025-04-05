@@ -12,14 +12,16 @@ public enum ControlType {
 
 public class Player : MovableEntity
 {
+    // pool pt freeze time. (DACA VREI SA ISI IA JUCATORII FREEZE IN ACELASI TIMP II BAGI IN ACELASI POOL)
     [SerializeField] protected PoolThiefType pool_thief_type;
+    // tip de control jucator (sageti sau "WASD")
     [SerializeField] protected ControlType control_type;
     
     protected KeyCode[] movement_keys = new KeyCode[4];
 
     protected override void HandleMovement()
     {
-        Vector2 movement = Vector2.zero;
+        movement_dir = Vector2.zero;
 
         bool up = Input.GetKey(movement_keys[0]);
         bool down = Input.GetKey(movement_keys[1]);
@@ -27,27 +29,27 @@ public class Player : MovableEntity
         bool right = Input.GetKey(movement_keys[3]);
 
         if (up)
-            movement.y += 1.0f;
+            movement_dir.y += 1.0f;
         if (down)
-            movement.y -= 1.0f;
+            movement_dir.y -= 1.0f;
         if (right)
-            movement.x += 1.0f;
+            movement_dir.x += 1.0f;
         if (left)
-            movement.x -= 1.0f;
+            movement_dir.x -= 1.0f;
 
         // pt viteza consistenta
-        movement = movement.normalized;
+        movement_dir = movement_dir.normalized;
 
-        // Apply the movement
-        //rb.linearVelocity = movement * speed * Time.deltaTime;
-        transform.Translate(movement * speed * Time.deltaTime);
+        // aplicam miscarea de translatie pentru deplasare efectiva
+        TranslateEntity(); 
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        movement_dir = Vector2.zero;
         speed = base_speed;
 
+        // "suncribe" la pool-ul corespunzator cammpului ales in "Inspector"
         switch (pool_thief_type) {
             case PoolThiefType.Type_1:
                 TimeManager.Instance.SubscribeThief_1(this);
@@ -59,6 +61,7 @@ public class Player : MovableEntity
                 break;
         }
 
+        // setam tastele
         switch (control_type)
         {
             case ControlType.WASD:
@@ -77,7 +80,6 @@ public class Player : MovableEntity
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleMovement();

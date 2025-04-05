@@ -5,11 +5,13 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+// Clasa de tip Singleton pt gestionarea timpului si freez-ului
 public class TimeManager : MonoBehaviour
 {
     private static int nr_freeze_pools = 3;
     private static TimeManager _instance;
 
+    // Design Pattern de tip "Observer" cu liste intre care se va face freeze alternativ
     private List<Freezable> poolThiefs_1 = new();
     private List<Freezable> poolThiefs_2 = new();
     private List<Freezable> poolCops = new();
@@ -44,7 +46,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    // Get the current pool based on frozen_idx
+    // returneaza "pool-ul" curent de entitati pe baza indexului
     private List<Freezable> GetCurrentPool()
     {
         switch (frozen_idx)
@@ -59,9 +61,9 @@ public class TimeManager : MonoBehaviour
     // functie alternare entitate inghetata
     private void ChangeFreezeEntity()
     {
-        // continua in loop pana dai de o categorie cu elemente
         int originalFrozenIdx = frozen_idx;
     
+        // Loop cautare urmatorul "pool" empty
         for (int i = 0; i < nr_freeze_pools; i++)
         {
             frozen_idx = (frozen_idx + 1) % nr_freeze_pools;
@@ -77,17 +79,17 @@ public class TimeManager : MonoBehaviour
         Debug.LogError("No category with items");
     }
 
-    // adauga elemente in listele de gestiune a freezului
+    // functii de adaugare in pool-uri (practic "suncribe" la serviciul de freeze)
     public void SubscribeThief_1(Freezable element) => poolThiefs_1.Add(element);
     public void SubscribeThief_2(Freezable element) => poolThiefs_2.Add(element);
     public void SubscribeCop(Freezable element) => poolCops.Add(element);
 
-    // scoate elemente din listele de gestiune ale freezului
+    // functii de eliminare din pool-uri (practic "unsubcribe" la serviciul de freeze)
     public void UnsubscribeThief_1(Freezable element) => poolThiefs_1.Remove(element);
     public void UnsubscribeThief_2(Freezable element) => poolThiefs_2.Remove(element);
     public void UnsubscribeCop(Freezable element) => poolCops.Remove(element);
 
-    // da freeze la "categoria" curenta
+    // da freeze la pool-ul focusat in prezent
     public void Freeze()
     {
         var pool = GetCurrentPool();
@@ -103,7 +105,7 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    // da unfreeze la "categoria" curenta si o seteaza pe urmatoarea
+    // da unfreeze si schimba pool-ul focusat
     public void Unfreeze()
     {
         var pool = GetCurrentPool();
