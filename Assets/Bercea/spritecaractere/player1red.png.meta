@@ -192,6 +192,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -934,7 +947,40 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player1red_0: -8001171162577130069
+      player1red_1: 8002373240202879916
+      player1red_10: 6830918832833680486
+      player1red_11: -492997419192689741
+      player1red_12: -8124884445726148997
+      player1red_13: -2000404468533867499
+      player1red_14: 4171054062719884476
+      player1red_15: -8676847552037679395
+      player1red_16: -3739892309005114688
+      player1red_17: 6214908669742943150
+      player1red_18: 4740675525215081326
+      player1red_19: -6681093829780565522
+      player1red_2: -150694724885513587
+      player1red_20: 6958363658164398720
+      player1red_21: -2994494399650654347
+      player1red_22: -359527037879927010
+      player1red_23: 5084385094787249532
+      player1red_24: -2229713948593416000
+      player1red_25: 2152044891507280749
+      player1red_26: -134133035214992840
+      player1red_27: 1958823055637586014
+      player1red_28: -3471198795627113716
+      player1red_29: 3741460221445525713
+      player1red_3: -4260530616789000059
+      player1red_30: -4288851370963036987
+      player1red_31: -1481107642268278635
+      player1red_32: -119972646537053904
+      player1red_4: -1563597569193106802
+      player1red_5: -8023424553590213796
+      player1red_6: -2388463263626539473
+      player1red_7: -9058100835836935047
+      player1red_8: -4831318995833537864
+      player1red_9: 5264111608525027109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
