@@ -5,17 +5,18 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.Rendering;
 
+// Clasa de tip Singleton pt gestionarea timpului si freez-ului
 public class TimeManager : MonoBehaviour
 {
     private static int nr_freeze_pools = 3;
     private static TimeManager _instance;
 
-    private List<Freezable> poolThiefs_1 = new();
-    private List<Freezable> poolThiefs_2 = new();
-    private List<Freezable> poolCops = new();
+    // Design Pattern de tip "Observer" cu liste intre care se va face freeze alternativ
+    private List<IFreezable> poolThiefs_1 = new();
+    private List<IFreezable> poolThiefs_2 = new();
+    private List<IFreezable> poolCops = new();
 
     private int frozen_idx = 0;
-
 
     public static TimeManager Instance
     {
@@ -32,7 +33,7 @@ public class TimeManager : MonoBehaviour
     }
 
     // ruleaza inainte de primul frame
-    private void Start()
+    private void Awake()
     {
         if (_instance == null)
         {
@@ -45,8 +46,8 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-    // Get the current pool based on frozen_idx
-    private List<Freezable> GetCurrentPool()
+    // returneaza "pool-ul" curent de entitati pe baza indexului
+    private List<IFreezable> GetCurrentPool()
     {
         switch (frozen_idx)
         {
@@ -57,83 +58,98 @@ public class TimeManager : MonoBehaviour
         }
     }
 
-
     // functie alternare entitate inghetata
     private void ChangeFreezeEntity()
     {
-        // continua in loop pana dai de o categorie cu elemente
         int originalFrozenIdx = frozen_idx;
     
-        do
+        // Loop cautare urmatorul "pool" empty
+        for (int i = 0; i < nr_freeze_pools; i++)
         {
             frozen_idx = (frozen_idx + 1) % nr_freeze_pools;
             
             if (GetCurrentPool().Count > 0)
             {
-                break; // am gasit o categorie valida
+                return; // am gasit o categorie valida
             }
 
-            if (frozen_idx == originalFrozenIdx)
-            {
-                Debug.LogWarning("All categories are empty. No valid category to freeze.");
-                break;
-            }
+        }
 
-        } while (true);
+        frozen_idx = originalFrozenIdx;
+        Debug.LogError("No category with items");
     }
 
+    // functii de adaugare in pool-uri (practic "suncribe" la serviciul de freeze)
+    public void SubscribeThief_1(IFreezable element) => poolThiefs_1.Add(element);
+    public void SubscribeThief_2(IFreezable element) => poolThiefs_2.Add(element);
+    public void SubscribeCop(IFreezable element) => poolCops.Add(element);
 
-    // adauga elemente in listele de gestiune a freezului
-    public void SubscribeThief_1(Freezable element) => poolThiefs_1.Add(element);
-    public void SubscribeThief_2(Freezable element) => poolThiefs_2.Add(element);
-    public void SubscribeCop(Freezable element) => poolCops.Add(element);
+    // functii de eliminare din pool-uri (practic "unsubcribe" la serviciul de freeze)
+    public void UnsubscribeThief_1(IFreezable element) => poolThiefs_1.Remove(element);
+    public void UnsubscribeThief_2(IFreezable element) => poolThiefs_2.Remove(element);
+    public void UnsubscribeCop(IFreezable element) => poolCops.Remove(element);
 
-    // scoate elemente din listele de gestiune ale freezului
-    public void UnsubscribeThief_1(Freezable element) => poolThiefs_1.Remove(element);
-    public void UnsubscribeThief_2(Freezable element) => poolThiefs_2.Remove(element);
-    public void UnsubscribeCop(Freezable element) => poolCops.Remove(element);
-
-
-    
-    // da freeze la "categoria" curenta
+    // da freeze la pool-ul focusat in prezent
     public void Freeze()
     {
-        switch (frozen_idx)
+        var pool = GetCurrentPool();
+        if (pool == null)
         {
-            case 0:
-                foreach (var x in poolThiefs_1) x.OnFreeze();
-                break;
-            case 1:
-                foreach (var x in poolThiefs_2) x.OnFreeze();
-                break;
-            case 2:
-                foreach (var x in poolCops) x.OnFreeze();
-                break;
-            default:
-                Debug.LogError("Error in Freeze function: invalid frozen_idx");
-                break;
+            Debug.LogWarning("Freeze(): Current pool is null.");
+            return;
+        }
+
+        foreach (var x in pool)
+        {
+            x.OnFreeze();
         }
     }
 
-    // da unfreeze la "categoria" curenta si o seteaza pe urmatoarea
+    // da unfreeze si schimba pool-ul focusat
     public void Unfreeze()
     {
-        switch (frozen_idx)
+        var pool = GetCurrentPool();
+        if (pool == null)
         {
-            case 0:
-                foreach (var x in poolThiefs_1) x.OnUnfreeze();
-                break;
-            case 1:
-                foreach (var x in poolThiefs_2) x.OnUnfreeze();
-                break;
-            case 2:
-                foreach (var x in poolCops) x.OnUnfreeze();
-                break;
-            default:
-                Debug.LogError("Error in Unfreeze function: invalid frozen_idx");
-                break;
+            Debug.LogWarning("UnFreeze(): Current pool is null.");
+            return;
+        }
+
+        foreach (var x in pool)
+        {
+            x.OnUnfreeze();
         }
 
         ChangeFreezeEntity(); // mergi la urmatoarea categorie
+    }
+
+    public void MyDebug()
+    {
+        Debug.Log($"[TimeManager] ======= DEBUG INFO =======");
+        Debug.Log($"Frozen Index: {frozen_idx}");
+        Debug.Log($"Thiefs_1 Pool Count: {poolThiefs_1.Count}");
+        Debug.Log($"Thiefs_2 Pool Count: {poolThiefs_2.Count}");
+        Debug.Log($"Cops Pool Count: {poolCops.Count}");
+
+        for (int i = 0; i < nr_freeze_pools; i++)
+        {
+            var pool = i switch
+            {
+                0 => poolThiefs_1,
+                1 => poolThiefs_2,
+                2 => poolCops,
+                _ => null
+            };
+
+            if (pool != null)
+            {
+                Debug.Log($"Pool {i}: {pool.Count} elements");
+                for (int j = 0; j < pool.Count; j++)
+                {
+                    Debug.Log($"    [{j}] {pool[j].GetType()}");
+                }
+            }
+        }
+        Debug.Log($"[TimeManager] =========================");
     }
 }

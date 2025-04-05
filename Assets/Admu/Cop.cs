@@ -1,30 +1,43 @@
+using System;
+using System.Collections.Generic;
 using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class Cop : MovableEntity
 {
+    // Lista cu punctele intre care patruleaza un politist
+    [SerializeField] protected List<Vector2> patrol_points = new(); // list of points in between which cop can patrol
+    protected int next_patrol_point = 0;
+    const float delta_patrol_check = 0.1f;
+    private void ChangePatrolPoint() {
+        next_patrol_point = (next_patrol_point + 1) % patrol_points.Count;
+    }
+
+    private void AdjustDirection() {
+        movement_dir = (patrol_points[next_patrol_point] - (Vector2)transform.position).normalized;
+    }
+
+    private void CheckPatrolPointReached() {
+        // Daca distanta este suficient de mica se considera punctul atins si se patruleaza spre urmatorul
+        if ((patrol_points[next_patrol_point] - (Vector2)transform.position).magnitude < delta_patrol_check) {
+            ChangePatrolPoint();
+        }
+    }
+
     protected override void HandleMovement()
     {
-        Vector2 movement = Vector2.zero;
-
-        // random movement for AI
-        if (Random.value < 0.25f)
-        {
-            movement = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
-        }
-
-        // Apply the movement to the Rigidbody2D
-        rb.linearVelocity = movement * speed;
+        CheckPatrolPointReached();
+        AdjustDirection();
+        TranslateEntity();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        movement_dir = Vector2.zero;
         speed = base_speed;
-        TimeManager.Instance.SubscribeCop(this);
+        TimeManager.Instance.SubscribeCop(this);     
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleMovement();
