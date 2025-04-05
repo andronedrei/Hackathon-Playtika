@@ -246,6 +246,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1384,7 +1397,58 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      playerbluebun_0: -8202553519682190152
+      playerbluebun_1: 1455697864689530121
+      playerbluebun_10: -3941398160768765452
+      playerbluebun_11: 6052735012874303178
+      playerbluebun_12: -1924186057193407480
+      playerbluebun_13: -2051251792024856339
+      playerbluebun_14: 8652183623344871217
+      playerbluebun_15: 8280188377099126220
+      playerbluebun_16: -5079189944765961041
+      playerbluebun_17: -5137338386443291818
+      playerbluebun_18: 6738423806129016275
+      playerbluebun_19: -2027460637103555676
+      playerbluebun_2: 4115959935896674776
+      playerbluebun_20: -5616377118594742065
+      playerbluebun_21: 3176350952968504484
+      playerbluebun_22: 7422274833688336410
+      playerbluebun_23: 6867247364945740312
+      playerbluebun_24: -3041276673930266477
+      playerbluebun_25: -8088961383593057180
+      playerbluebun_26: -3170110416240913642
+      playerbluebun_27: -8490331716069263205
+      playerbluebun_28: -5217386297573800093
+      playerbluebun_29: 4139844168873859814
+      playerbluebun_3: -4780063999367371457
+      playerbluebun_30: -8220510787301888073
+      playerbluebun_31: -67864053390041230
+      playerbluebun_32: -3420067307020476434
+      playerbluebun_33: 4812490725918209927
+      playerbluebun_34: -3467713057171217146
+      playerbluebun_35: -6453849329290085625
+      playerbluebun_36: -2786288229708404264
+      playerbluebun_37: -6959604912045183863
+      playerbluebun_38: -8345541842176766734
+      playerbluebun_39: 7469390730124064707
+      playerbluebun_4: -8337266196127692178
+      playerbluebun_40: -1992596675209617623
+      playerbluebun_41: -2155741133210059157
+      playerbluebun_42: 8673695662618978077
+      playerbluebun_43: -7509990664868661743
+      playerbluebun_44: -2802100601501068672
+      playerbluebun_45: -5871189698875406967
+      playerbluebun_46: -8649875154116384792
+      playerbluebun_47: 2937229576915861487
+      playerbluebun_48: 4057565897811520881
+      playerbluebun_49: 8458478238872319316
+      playerbluebun_5: 3556921646678252760
+      playerbluebun_50: -6986996540243088757
+      playerbluebun_6: 6183218479635104402
+      playerbluebun_7: 3418154988995538051
+      playerbluebun_8: -5493474198424627510
+      playerbluebun_9: -8458507382963695423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
