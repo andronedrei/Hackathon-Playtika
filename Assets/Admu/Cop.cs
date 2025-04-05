@@ -49,7 +49,12 @@ public class Cop : MovableEntity
 
     void Update()
     {
-        HandleMovement();
         child_fov.UpdateDir(movement_dir);
+    }
+
+    // folosim fixed update pentru consistenta cu atributele de fizica 
+    void FixedUpdate()
+    {
+        HandleMovement();
     }
 }
