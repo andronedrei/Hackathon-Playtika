@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class LvlManager : MonoBehaviour
+public class currentLvl : MonoBehaviour
 {
-    public static LvlManager Instance { get; private set; }
+    public static currentLvl Instance { get; private set; }
 
     public string CurrentLevel { get; set; }
 
@@ -12,6 +12,7 @@ public class LvlManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("currentLvl Instance has been set.");
         }
         else
         {
