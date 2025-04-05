@@ -1,6 +1,4 @@
-using System;
-using System.Diagnostics;
-using System.IO;
+
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
@@ -15,12 +13,24 @@ public class FieldOfView : MonoBehaviour
     protected int ray_count = 20; // ar trebui sa fie macar 1
 
     private float angle_offset = 0f;
+    //private Vector2 fov_dir;
 
     void Start()
     {
         fov_mesh = new();
         GetComponent<MeshFilter>().mesh = fov_mesh;
         GetComponent<MeshRenderer>().material = fov_material;
+    }
+
+    private bool CheckPlayerHit(RaycastHit2D check_hit) {
+        GameObject hitObject = check_hit.collider.gameObject;
+
+        // try to use hit object as a Player
+        if (hitObject.TryGetComponent<Player>(out var hitComponent))
+        {
+            Debug.Log("We found a player! " + hitComponent.GetType().Name);
+        }
+        return true;
     }
 
     void Update()
@@ -48,8 +58,11 @@ public class FieldOfView : MonoBehaviour
                 // nu am lovit nimic, randam pana la "view distance"
                 vertices[i + 1] = dir * view_distance;
             } else {
-                // am lovit ceva, randam pana la obiect
+                // am lovit un obiect, oprim randarea
                 vertices[i + 1] = check_hit.point - (Vector2)transform.position;
+
+                // daca obiectul a fost un player, semnalam asta
+                CheckPlayerHit(check_hit);
             }
             
         }
@@ -66,12 +79,9 @@ public class FieldOfView : MonoBehaviour
         fov_mesh.triangles = triangles;
     }
 
-    // fa campul vizual sa fie indreptat catre o directie
-    public void SetDirection(Vector2 dir) {
-        angle_offset = Mathf.Atan2(dir.y, dir.x);
-    }
+    public void UpdateDir(Vector2 dir) {
+        angle_offset = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-    public void SetOrigin(Vector2 point) {
-        //transform.position = (Vector2)point;
+        //fov_offset = dir * 2.0f;
     }
 }
