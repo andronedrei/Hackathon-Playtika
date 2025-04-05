@@ -33,7 +33,7 @@ public class FieldOfView : MonoBehaviour
         if (hitObject.TryGetComponent<Player>(out var hitComponent))
         {
             Debug.Log("We found a player! " + hitComponent.GetType().Name);
-            LvlManager.Instance.CurrentLevel = "horo(fail)";
+            //LvlManager.Instance.CurrentLevel = "horo(fail)";
             SceneManager.LoadSceneAsync("horo(fail)");
         }
         return true;
