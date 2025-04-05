@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - COP
+  - Player2
+  - Player1
   layers:
   - Default
   - TransparentFX
@@ -39,8 +41,23 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: New Layer 5
+    uniqueID: 241401825
+    locked: 0
+  - name: Ground
+    uniqueID: 4066472681
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Furniture/walls
+    uniqueID: 1018082637
+    locked: 0
+  - name: Roof
+    uniqueID: 2189918583
+    locked: 0
+  - name: UI
+    uniqueID: 2576591589
     locked: 0
   m_RenderingLayers:
   - Default
