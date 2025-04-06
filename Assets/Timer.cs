@@ -7,7 +7,12 @@ using TMPro;
 public class CountdownTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] protected Image backgroundImagealbg;
     // private float countdownTime = 10f; // Countdown time in seconds
+
+    // Hard coded sprites
+    [SerializeField] protected Sprite normalBgSprite;
+    [SerializeField] protected Sprite warningBgSprite;
 
     private float currentTime;
 
@@ -23,8 +28,17 @@ public class CountdownTimer : MonoBehaviour
         // UpdateCountdownText();
     }
 
-    public void SetTimer(float time) {
+    public void SetTimer(float time, bool freeze_img) {
         currentTime = time;
+
+        if (freeze_img)
+        {
+            backgroundImagealbg.sprite = normalBgSprite;
+        }
+        else
+        {
+            backgroundImagealbg.sprite = warningBgSprite;
+        }
     }
 
     void Update()

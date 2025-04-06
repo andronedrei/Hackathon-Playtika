@@ -60,7 +60,9 @@ public class TimeManager : MonoBehaviour
 
         freezed = false;
         frozen_idx = 0;
-        countdown_timer.SetTimer(wait_freeze_time);
+        countdown_timer.SetTimer(wait_freeze_time, true);
+
+        Debug.Log($"[TimeManager] Initialized with {nr_freeze_pools} pools.");
     }
 
     // returneaza "pool-ul" curent de entitati pe baza indexului
@@ -143,11 +145,11 @@ public class TimeManager : MonoBehaviour
     public void TtriggerNextAction() {
         if (!freezed) {
             Freeze();
-            countdown_timer.SetTimer(freeze_time);
+            countdown_timer.SetTimer(freeze_time, false);
         }
         if (freezed) {
             Unfreeze();
-            countdown_timer.SetTimer(wait_freeze_time);
+            countdown_timer.SetTimer(wait_freeze_time, true);
         }
         freezed = !freezed;
     }
