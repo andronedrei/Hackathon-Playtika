@@ -41,6 +41,10 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
+    public float getCurrentTime() {
+        return currentTime;
+    }
+
     void Update()
     {
         if (currentTime > 0)
