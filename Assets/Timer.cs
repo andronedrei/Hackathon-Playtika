@@ -14,28 +14,18 @@ public class CountdownTimer : MonoBehaviour
     [SerializeField] protected Sprite normalBgSprite;
     [SerializeField] protected Sprite warningBgSprite;
 
-    private float currentTime = 5f;
-
-    void Awake()
-    {
-        // if (countdownText == null)
-        // {
-        //     Debug.LogError("CountdownText is not assigned!");
-        //     return;
-        // }
-
-        // TimeManager.Instance.countdown_timer = this;
-    }
+    private float currentTime;
 
     void Start()
     {
         if (countdownText == null)
         {
             Debug.LogError("CountdownText is not assigned!");
+            return;
         }
 
         TimeManager.Instance.countdown_timer = this;
-        //currentTime = countdownTime;
+        // currentTime = countdownTime;
         // UpdateCountdownText();
     }
 
@@ -52,9 +42,9 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
-    // public float getCurrentTime() {
-    //     return currentTime;
-    // }
+    public float getCurrentTime() {
+        return currentTime;
+    }
 
     void Update()
     {
