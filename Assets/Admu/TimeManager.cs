@@ -9,46 +9,55 @@ using UnityEngine.Rendering;
 // Clasa de tip Singleton pt gestionarea timpului si freez-ului
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] protected int nr_freeze_pools; // trb sa fie 2 sau 3
+    [SerializeField] protected int nr_freeze_pools = 2; // trb sa fie 2 sau 3
     [SerializeField] protected float freeze_time = 1f;
     [SerializeField] protected float wait_freeze_time = 5f;
     [SerializeField] protected CountdownTimer countdown_timer; // child class of time manager
-    private bool freezed = false;
-    private static TimeManager _instance;
+    private bool freezed;
+    public static TimeManager Instance = null;
 
     // Design Pattern de tip "Observer" cu liste intre care se va face freeze alternativ
-    private List<IFreezable> poolThiefs_1 = new();
-    private List<IFreezable> poolCops = new();
-    private List<IFreezable> poolThiefs_2 = new();
+    private List<IFreezable> poolThiefs_1;
+    private List<IFreezable> poolCops;
+    private List<IFreezable> poolThiefs_2;
 
-    private int frozen_idx = 0;
+    private int frozen_idx;
 
-    public static TimeManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                GameObject obj = new GameObject("TimeManager");
-                _instance = obj.AddComponent<TimeManager>();
-                DontDestroyOnLoad(obj);
-            }
-            return _instance;
-        }
-    }
+    // public static TimeManager Instance
+    // {
+    //     get
+    //     {
+    //         if (_instance == null)
+    //         {
+    //             GameObject obj = new GameObject("TimeManager");
+    //             _instance = obj.AddComponent<TimeManager>();
+    //             DontDestroyOnLoad(obj);
+    //         }
+    //         return _instance;
+    //     }
+    // }
 
     // ruleaza inainte de primul frame
     private void Awake()
     {
-        if (_instance == null)
-        {
-            _instance = this; // se asigura ca exista o onstanta
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        // if (_instance == null)
+        // {
+        //     _instance = this; // se asigura ca exista o onstanta
+        //     DontDestroyOnLoad(gameObject);
+        // }
+        // else
+        // {
+        //     Destroy(gameObject);
+        // }
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
+        Instance = this;
+
+        poolThiefs_1 = new();
+        poolCops = new();
+        poolThiefs_2 = new();
     }
 
     void Start()
