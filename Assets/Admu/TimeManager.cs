@@ -12,7 +12,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] protected int nr_freeze_pools = 2; // trb sa fie 2 sau 3
     [SerializeField] protected float freeze_time = 1f;
     [SerializeField] protected float wait_freeze_time = 5f;
-    [SerializeField] protected CountdownTimer countdown_timer; // child class of time manager
+    [SerializeField] public CountdownTimer countdown_timer; // child class of time manager
     private bool freezed;
     public static TimeManager Instance = null;
 

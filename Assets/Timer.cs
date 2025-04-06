@@ -24,6 +24,7 @@ public class CountdownTimer : MonoBehaviour
             return;
         }
 
+        TimeManager.Instance.countdown_timer = this;
         // currentTime = countdownTime;
         // UpdateCountdownText();
     }
