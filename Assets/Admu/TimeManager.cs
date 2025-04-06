@@ -69,7 +69,6 @@ public class TimeManager : MonoBehaviour
 
         freezed = false;
         frozen_idx = 0;
-        countdown_timer.SetTimer(wait_freeze_time, true);
 
         Debug.Log($"[TimeManager] Initialized with {nr_freeze_pools} pools.");
     }
@@ -156,10 +155,8 @@ public class TimeManager : MonoBehaviour
             Freeze();
             countdown_timer.SetTimer(freeze_time, false);
         }
-        if (freezed) {
             Unfreeze();
             countdown_timer.SetTimer(wait_freeze_time, true);
-        }
         freezed = !freezed;
     }
 
