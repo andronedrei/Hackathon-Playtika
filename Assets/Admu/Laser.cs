@@ -12,14 +12,19 @@ public class Laser : MonoBehaviour, IFreezable
 
     FieldOfView child_fov;
 
-    public void OnFreeze()
+    void IFreezable.OnFreeze()
     {
         cur_rotation_speed = 0;
     }
 
-    public void OnUnfreeze()
+    void IFreezable.OnUnfreeze()
     {
         cur_rotation_speed = default_rotation_speed;
+    }
+
+    bool IFreezable.IsFreezed()
+    {
+        return cur_rotation_speed == 0;
     }
 
     protected void HandleRotaion() {
