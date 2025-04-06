@@ -25,6 +25,7 @@ public class CountdownTimer : MonoBehaviour
         }
 
         TimeManager.Instance.countdown_timer = this;
+        currentTime = 5f;
         // currentTime = countdownTime;
         // UpdateCountdownText();
     }
@@ -42,9 +43,9 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
-    public float getCurrentTime() {
-        return currentTime;
-    }
+    // public float getCurrentTime() {
+    //     return currentTime;
+    // }
 
     void Update()
     {

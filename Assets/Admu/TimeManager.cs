@@ -12,7 +12,8 @@ public class TimeManager : MonoBehaviour
     [SerializeField] protected int nr_freeze_pools = 2; // trb sa fie 2 sau 3
     [SerializeField] protected float freeze_time = 1f;
     [SerializeField] protected float wait_freeze_time = 5f;
-    [SerializeField] public CountdownTimer countdown_timer; // child class of time manager
+    //[SerializeField] public CountdownTimer countdown_timer; // child class of time manager
+    public CountdownTimer countdown_timer; // child class of time manager
     private bool freezed;
     public static TimeManager Instance = null;
 
@@ -67,10 +68,12 @@ public class TimeManager : MonoBehaviour
             nr_freeze_pools = 2;
         }
 
-        freezed = false;
+        freezed = true;
         frozen_idx = 0;
 
         Debug.Log($"[TimeManager] Initialized with {nr_freeze_pools} pools.");
+
+        TtriggerNextAction();
     }
 
     // returneaza "pool-ul" curent de entitati pe baza indexului
@@ -155,8 +158,10 @@ public class TimeManager : MonoBehaviour
             Freeze();
             countdown_timer.SetTimer(freeze_time, false);
         }
+        if (freezed) {
             Unfreeze();
             countdown_timer.SetTimer(wait_freeze_time, true);
+        }
         freezed = !freezed;
     }
 
