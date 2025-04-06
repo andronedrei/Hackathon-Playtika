@@ -981,14 +981,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1791418904}
         m_TargetAssemblyTypeName: LevelSelectionMenu, Assembly-CSharp
-        m_MethodName: LoadLevel
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level2Copie
+          m_StringArgument: Level3FIN
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &725825435
@@ -1390,7 +1390,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: copie2
+          m_StringArgument: Level1FIN
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &922943226
@@ -2044,14 +2044,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1791418904}
         m_TargetAssemblyTypeName: LevelSelectionMenu, Assembly-CSharp
-        m_MethodName: LoadLevel
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level2Copie
+          m_StringArgument: Level2FIN
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1914512293

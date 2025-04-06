@@ -38,6 +38,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/horo(win).unity
     guid: e19e4be84036a4345be27c16a0edd638
+  - enabled: 1
+    path: Assets/Scenes/FINAL/Level1FIN.unity
+    guid: 958790e507af6ed4cb77979e3259948f
+  - enabled: 1
+    path: Assets/Scenes/FINAL/Level2FIN.unity
+    guid: 15c882e44f03df445b6e0b1a8b5cd8ad
+  - enabled: 1
+    path: Assets/Scenes/FINAL/Level3FIN.unity
+    guid: 88a3d8234a3565e47b3200a5e1667b93
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
