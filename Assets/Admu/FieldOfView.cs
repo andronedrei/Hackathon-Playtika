@@ -9,9 +9,9 @@ public class FieldOfView : MonoBehaviour
     //[SerializeField] protected Material fov_material;
     private Mesh fov_mesh;
 
-    protected uint view_distance = 5;
-    protected float fov = 30; // fov ca unghi
-    protected int ray_count = 20; // ar trebui sa fie macar 1
+    [SerializeField] protected uint view_distance = 5;
+    [SerializeField] protected float fov = 30; // fov ca unghi
+    [SerializeField] protected int ray_count = 20; // ar trebui sa fie macar 1
 
     private float angle_offset = 0f;
     //private Vector2 fov_dir;
