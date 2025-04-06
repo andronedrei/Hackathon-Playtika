@@ -5,4 +5,5 @@ public interface IFreezable
 {
     void OnFreeze();
     void OnUnfreeze();
+    bool IsFreezed();
 }

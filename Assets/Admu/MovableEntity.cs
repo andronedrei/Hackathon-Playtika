@@ -22,4 +22,9 @@ public abstract class MovableEntity : MonoBehaviour, IFreezable
     {
         speed = base_speed;
     }
+
+    bool IFreezable.IsFreezed()
+    {
+        return speed == 0;
+    }
 }

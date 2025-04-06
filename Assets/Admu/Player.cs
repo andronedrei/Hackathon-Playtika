@@ -177,7 +177,7 @@ public class Player : MovableEntity
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         HandleMovement();
     }

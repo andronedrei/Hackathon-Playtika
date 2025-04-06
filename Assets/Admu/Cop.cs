@@ -15,6 +15,7 @@ public class Cop : MovableEntity
     private SpriteRenderer mySpriteRender;
     private Vector2 lastMoveDirection = Vector2.down;
 
+    [System.Obsolete]
     private void Awake()
     {
         myAnimator = GetComponentInChildren<Animator>();

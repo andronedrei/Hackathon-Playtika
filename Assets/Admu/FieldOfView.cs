@@ -15,6 +15,7 @@ public class FieldOfView : MonoBehaviour
 
     private float angle_offset = 0f;
     //private Vector2 fov_dir;
+    IFreezable parent;
 
     void Start()
     {
@@ -24,13 +25,14 @@ public class FieldOfView : MonoBehaviour
 
         GetComponent<MeshRenderer>().sortingLayerName = "Default"; // Create if needed
         GetComponent<MeshRenderer>().sortingOrder = 0;
+        parent = GetComponentInParent<IFreezable>();
     }
 
     private bool CheckPlayerHit(RaycastHit2D check_hit) {
         GameObject hitObject = check_hit.collider.gameObject;
 
         // try to use hit object as a Player
-        if (hitObject.TryGetComponent<Player>(out var hitComponent))
+        if (hitObject.TryGetComponent<Player>(out var hitComponent) && parent.IsFreezed() == false)
         {
             //Debug.Log("We found a player! " + hitComponent.GetType().Name);
             ////currentLvl.Instance.CurrentLevel = "leveltest";
@@ -41,6 +43,11 @@ public class FieldOfView : MonoBehaviour
 
     void LateUpdate()
     {
+        float fov_backup = fov;
+        if (parent.IsFreezed()) {
+            fov = 0f;
+        }
+
         ray_count = Mathf.Max(1, ray_count);
         float angle_step = fov / ray_count;
         float start_angle = -fov / 2f + angle_offset;
@@ -85,6 +92,10 @@ public class FieldOfView : MonoBehaviour
         fov_mesh.vertices = vertices;
         fov_mesh.uv = uv;
         fov_mesh.triangles = triangles;
+
+        if (parent.IsFreezed()) {
+            fov = fov_backup;
+        }
     }
 
     public void UpdateDir(Vector2 dir) {
